@@ -2,6 +2,7 @@
 <script>
 	import Counter from './component/Counter.svelte';
 	import DataBinding from './component/DataBinding.svelte';
+	import InlineDeleteEventHandler from './component/InlineDeleteEventHandler.svelte';
 	import Loops from './component/Loops.svelte';
 	import ReactiveValuesAndStatements from './component/ReactiveValuesAndStatements.svelte';
 	// export let name;
@@ -13,7 +14,8 @@
 	<DataBinding/>
 	<hr>
 	<ReactiveValuesAndStatements/> -->
-	<Loops/>
+	<!-- <Loops/> -->
+	<InlineDeleteEventHandler/>
 </main>
 
 <style>
