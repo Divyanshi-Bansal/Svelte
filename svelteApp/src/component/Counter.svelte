@@ -1,10 +1,18 @@
-<script></script>
+<script>
+    let count=0;
+    function increase(){
+        count=count+1;
+    }
+    function decrease(){
+        count = count-1;
+    }
+</script>
 
 <main>
     <h1>Practice-1</h1>
     <h2>Counter</h2>
-    <button>CLick to increase</button>
-    <button>Click to decrease</button>
+    <button on:click={increase}>CLick to increase</button>
+    <button on:click={decrease}>Click to decrease</button>
 </main>
 
 <style></style>
