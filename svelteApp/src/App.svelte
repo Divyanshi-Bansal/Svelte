@@ -1,11 +1,14 @@
 
 <script>
 	import Counter from './component/Counter.svelte';
-	export let name;
+	import DataBinding from './component/DataBinding.svelte';
+	// export let name;
 </script>
 
 <main>
 	<Counter/>
+	<hr>
+	<DataBinding/>
 </main>
 
 <style>
