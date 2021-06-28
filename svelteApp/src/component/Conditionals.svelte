@@ -1,8 +1,15 @@
 <script>
     let array = [
         {name:"Divyanshi", age:20 , color:["black", 'red' , 'wheat']},
-        {name:"Priyanshi", age:17 , color:["black" , 'blue']},
-        {name:"Hariom", age:15 , color:["black" , 'wheat']}
+        {name:"janny", age:17 , color:["black" , 'blue']},
+        {name:"mosh", age:15 , color:["black" , 'wheat']},
+        {name:"anuj", age:16 , color:["black" , 'wheat']},
+        {name:"sneha", age:17 , color:["black" , 'wheat']},
+        {name:"simmi", age:18 , color:["black" , 'wheat']},
+        {name:"john", age:19 , color:["black" , 'wheat']},
+        {name:"lary", age:10 , color:["black" , 'wheat']},
+        {name:"harry", age:9 , color:["black" , 'wheat']},
+        {name:"anne", age:5 , color:["black" , 'wheat']}
     ]
 </script>
 
