@@ -15,4 +15,10 @@
     <button on:click={decrease}>Click to decrease</button>
 </main>
 
-<style></style>
+<style>
+    main{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+</style>
