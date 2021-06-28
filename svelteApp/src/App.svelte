@@ -2,6 +2,7 @@
 <script>
 	import Counter from './component/Counter.svelte';
 	import DataBinding from './component/DataBinding.svelte';
+	import ReactiveValuesAndStatements from './component/ReactiveValuesAndStatements.svelte';
 	// export let name;
 </script>
 
@@ -9,6 +10,8 @@
 	<Counter/>
 	<hr>
 	<DataBinding/>
+	<hr>
+	<ReactiveValuesAndStatements/>
 </main>
 
 <style>
