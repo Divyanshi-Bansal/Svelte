@@ -2,16 +2,18 @@
 <script>
 	import Counter from './component/Counter.svelte';
 	import DataBinding from './component/DataBinding.svelte';
+	import Loops from './component/Loops.svelte';
 	import ReactiveValuesAndStatements from './component/ReactiveValuesAndStatements.svelte';
 	// export let name;
 </script>
 
 <main>
-	<Counter/>
+	<!-- <Counter/>
 	<hr>
 	<DataBinding/>
 	<hr>
-	<ReactiveValuesAndStatements/>
+	<ReactiveValuesAndStatements/> -->
+	<Loops/>
 </main>
 
 <style>
@@ -22,12 +24,12 @@
 		margin: 0 auto;
 	}
 
-	h1 {
+	/* h1 {
 		color: #ff3e00;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
-	}
+	} */
 
 	@media (min-width: 640px) {
 		main {

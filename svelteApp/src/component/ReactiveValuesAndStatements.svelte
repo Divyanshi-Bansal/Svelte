@@ -37,7 +37,7 @@
     }
 
     h1{
-        colo: green;
+        color: green;
     }
     input{
         display: inline-block;
