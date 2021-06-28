@@ -21,23 +21,49 @@
     <h2>conditionls</h2>
     <h3>if-else</h3>
     <input type="text" bind:value={limit}>
-
-    {#each array as a}
-        {#if a.age > limit}
-            <div>
-                <h4>{a.name}</h4>
-                <h5>{a.age}</h5>
-            </div>
-            {:else if a.age < limit}
-                <div>
+    <div class="details">
+        {#each array as a}
+            {#if a.age > limit}
+                <div class="info">
                     <h4>{a.name}</h4>
                     <h5>{a.age}</h5>
                 </div>
-            {:else}
-                <p>Nothing to show...</p>
-                <h5>student of {a.age} is not present.</h5>
-        {/if}
-    {/each}
+                <!-- {:else if a.age < limit}
+                    <div>
+                        <h4>{a.name}</h4>
+                        <h5>{a.age}</h5>
+                        <hr>
+                    </div>
+                {:else}
+                    <p>Nothing to show...</p>
+                    <h5>student of {a.age} is not present.</h5> -->
+            {/if}
+        {/each}
+    </div>
 </main>
 
-<atyle></atyle>
+<style>
+    h1{
+        color: green;
+    }
+    h2 , h3{
+        color: indianred;
+        font-family: cursive;
+    }
+    input{
+        text-align: center;
+    }
+    .details{
+        display: flex;
+        flex-direction: row;
+        margin:30px;
+    }
+    .info{
+        color: lightblue;
+        border-radius: 12px;
+        border: 1px solid rgb(7, 118, 133);
+        box-shadow: 3px 2px 1px 2px lightblue;
+        width: 300px;
+        margin: 30px;
+    }
+</style>
