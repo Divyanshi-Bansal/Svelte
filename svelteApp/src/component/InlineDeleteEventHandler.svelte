@@ -26,6 +26,7 @@
         <div class="student-info">
             <h4>{student.name}</h4>
             <button on:click={() => DeleteById(student.id)}>Delete</button>
+            <hr>
             <!-- we can't pass DeleteById(id) directly in onclick just because it will be invoked directly when it prints, then delete suddenly, so  -->
             <!-- to get rid from this automation, we use inline event handler through this we can pass arguments. -->
         </div>
@@ -33,12 +34,7 @@
  </main>
 
  <style>
-     .student-info{
-         display: flex;
-         flex-direction: row;
-         margin: 20px;
-        padding: 10px;
-     }
+     
      h4{
          padding: 10px;
      }
