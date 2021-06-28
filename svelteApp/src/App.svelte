@@ -5,6 +5,7 @@
 	import InlineDeleteEventHandler from './component/InlineDeleteEventHandler.svelte';
 	import Loops from './component/Loops.svelte';
 	import ReactiveValuesAndStatements from './component/ReactiveValuesAndStatements.svelte';
+	import Conditionals from './component/Conditionals.svelte';
 	// export let name;
 </script>
 
@@ -15,7 +16,8 @@
 	<hr>
 	<ReactiveValuesAndStatements/> -->
 	<!-- <Loops/> -->
-	<InlineDeleteEventHandler/>
+	<!-- <InlineDeleteEventHandler/> -->
+	<Conditionals/>
 </main>
 
 <style>
