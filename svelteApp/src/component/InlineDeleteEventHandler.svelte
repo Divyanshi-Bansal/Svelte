@@ -19,17 +19,31 @@
 
  <main>
     <h1>Practice-5</h1>
-    <h2>we will going to delete the particular record<br>by event handler. </h2>
+    <h2>we will going to delete the particular record<br>by inline event handler. </h2>
     <!-- for-each loop -->
 
     {#each details as student}
-        <h4>student.name</h4>
-        <button on:click={() => DeleteById(student.id)}>Delete</button>
-        <!-- we can't pass DeleteById(id) directly in onclick just because it will be invoked directly when it prints, then delete suddenly, so  -->
-        <!-- to get rid from this automation, we use inline event handler through this we can pass arguments. -->
+        <div class="student-info">
+            <h4>{student.name}</h4>
+            <button on:click={() => DeleteById(student.id)}>Delete</button>
+            <!-- we can't pass DeleteById(id) directly in onclick just because it will be invoked directly when it prints, then delete suddenly, so  -->
+            <!-- to get rid from this automation, we use inline event handler through this we can pass arguments. -->
+        </div>
     {/each}
  </main>
 
  <style>
-
+     .student-info{
+         display: flex;
+         flex-direction: row;
+         margin: 20px;
+        padding: 10px;
+     }
+     h4{
+         padding: 10px;
+     }
+     button{
+         height: 40px;
+         text-align: center;
+     }
  </style>
