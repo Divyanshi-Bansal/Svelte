@@ -9,8 +9,9 @@
 </script>
 
 <main>
-    <h1>Practice-1</h1>
+    <h1 >Practice-1</h1>
     <h2>Counter</h2>
+    <h3>Counter value: {count}</h3>
     <button on:click={increase}>CLick to increase</button>
     <button on:click={decrease}>Click to decrease</button>
 </main>
@@ -20,5 +21,9 @@
         align-items: center;
         text-align: center;
         justify-content: center;
+    }
+
+    button{
+        cursor: pointer;
     }
 </style>
