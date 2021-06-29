@@ -6,6 +6,7 @@
 	import Loops from './component/Loops.svelte';
 	import ReactiveValuesAndStatements from './component/ReactiveValuesAndStatements.svelte';
 	import Conditionals from './component/Conditionals.svelte';
+	import Props from './component/Props.svelte';
 	// export let name;
 </script>
 
@@ -17,7 +18,8 @@
 	<ReactiveValuesAndStatements/> -->
 	<!-- <Loops/> -->
 	<!-- <InlineDeleteEventHandler/> -->
-	<Conditionals/>
+	<!-- <Conditionals/> -->
+	<Props/>
 </main>
 
 <style>
