@@ -1,7 +1,7 @@
 <script>
     export let message1 = "default message1";
     export let message2 = "default message2";
-    let isPromo = false;
+    export let isPromo = false;
 </script>
 
 <main>
@@ -24,7 +24,7 @@
     h4{
         color: indigo;
     }
-    .promo p{
+    .promo{
         background-color: khaki;
         margin: 20px;
         padding: 20px;
