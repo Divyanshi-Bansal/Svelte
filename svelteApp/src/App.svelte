@@ -7,6 +7,7 @@
 	import ReactiveValuesAndStatements from './component/ReactiveValuesAndStatements.svelte';
 	import Conditionals from './component/Conditionals.svelte';
 	import Props from './component/Props.svelte';
+	import EventForwarding from './component/EventForwarding.svelte';
 	// export let name;
 </script>
 
@@ -19,7 +20,8 @@
 	<!-- <Loops/> -->
 	<!-- <InlineDeleteEventHandler/> -->
 	<!-- <Conditionals/> -->
-	<Props message1="props value for message1" message2="props value for message2" isPromo={true}/>
+	<!-- <Props message1="props value for message1" message2="props value for message2" isPromo={true}/> -->
+	<EventForwarding/>
 </main>
 
 <style>
@@ -43,3 +45,4 @@
 		}
 	}
 </style>
+
