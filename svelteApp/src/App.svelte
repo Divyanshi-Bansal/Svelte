@@ -19,7 +19,7 @@
 	<!-- <Loops/> -->
 	<!-- <InlineDeleteEventHandler/> -->
 	<!-- <Conditionals/> -->
-	<Props/>
+	<Props message1="props value for message1" message2="props value for message2"/>
 </main>
 
 <style>
