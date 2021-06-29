@@ -7,7 +7,7 @@
 <main>
     <h1>Practice-7</h1>
     <h2>Props</h2>
-    <p class:promo={isPromo}>{message1}</p>
+    <p class:promo={isPromo} class="p">{message1}</p>
     <h4>{message2}</h4>
 </main>
 
@@ -18,7 +18,7 @@
     h2{
         color: grey;
     }
-    p{
+    .p{
         color: indianred;
     }
     h4{
