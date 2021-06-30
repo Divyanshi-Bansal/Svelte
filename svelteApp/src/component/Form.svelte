@@ -14,6 +14,7 @@ import { get_store_value } from "svelte/internal";
     // let C = false;
     // let D = false;
     let StudentDetail = [];
+    let College;
 
     const handleSubmit = () => {
         isDisplay = !isDisplay;
@@ -49,7 +50,7 @@ import { get_store_value } from "svelte/internal";
             <input type="checkbox" bind:group={StudentDetail} value="D"/> D <br>
             <!-- svelte-ignore a11y-label-has-associated-control -->
             <label>Choose College</label>
-            <select bind:value={StudentDetail}>
+            <select bind:value={College}>
                 <option value="GLA">GLA</option>
                 <option value="GL Bajaj">GL Bajaj</option>
                 <option value="IPU">IPU</option>
@@ -67,8 +68,9 @@ import { get_store_value } from "svelte/internal";
             <h3>{Mba}</h3>
             <h3>{Mtech}</h3> -->
             {#each StudentDetail as cs}
-                <h3>cs</h3>
+                <h3>{cs}</h3>
             {/each}
+            <h3>{College}</h3>
         </div>
     {/if}
 </main>
