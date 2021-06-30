@@ -33,7 +33,7 @@
         /* height: 200px; */
         padding: 19px;
         margin: 10% auto;
-        /* width: 400px; */
+        width: 400px;
         text-align: center;
         align-items: center;
         justify-content: center;
