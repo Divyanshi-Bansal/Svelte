@@ -13,26 +13,24 @@
                 <h3>Click anywhere to come out.</h3>
             </div>
         </div>
+        <slot></slot>
     {/if}
 </main>
 
 <style>
     .modal{
-        height: 1000%;
+        height: 100%;
         width: 100%;
         background: rgba(0, 0, 0, 0.5);
         padding:20px;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
     }
     .alert{
         background-color: white;
         color: grey;
-        /* height: 200px;
+        height: 200px;
         padding: 19px;
         margin: 30px;
-        width: 400px; */
+        width: 400px;
     }
 </style>
 

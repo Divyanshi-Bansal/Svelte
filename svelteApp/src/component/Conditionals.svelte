@@ -21,7 +21,7 @@ import EventForwarding from "./EventForwarding.svelte";
 	};
 
 </script>
-<EventForwarding isDisplay={showModal} on:click={toggleClick}/>
+<EventForwarding isDisplay={showModal} on:click={toggleClick}>
 <main>
     <button on:click|once={toggleClick}>Click</button>
     <h1>Practice-6</h1>
@@ -48,6 +48,7 @@ import EventForwarding from "./EventForwarding.svelte";
         {/each}
     </div>
 </main>
+</EventForwarding>
 
 <style>
     h1{
