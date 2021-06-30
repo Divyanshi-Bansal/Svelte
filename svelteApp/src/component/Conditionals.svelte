@@ -21,9 +21,10 @@ import EventForwarding from "./EventForwarding.svelte";
 	};
 
 </script>
+<button on:click|once={toggleClick}>Click</button>
 <EventForwarding isDisplay={showModal} on:click={toggleClick}>
 <main>
-    <button on:click|once={toggleClick}>Click</button>
+    
     <h1>Practice-6</h1>
     <h2>conditionls</h2>
     <h3>if-else</h3>
