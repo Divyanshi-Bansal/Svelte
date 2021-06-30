@@ -1,7 +1,10 @@
 <script>
+    let name;
     let isDisplay=true;
+    let isShowData = false;
     const handleSubmit = () => {
-
+        isDisplay = !isDisplay;
+        isShowData = !isDisplay;
     }
 </script>
 
@@ -12,7 +15,7 @@
             <h2>LogIn</h2>
             <!-- svelte-ignore a11y-label-has-associated-control -->
             <label>Username:)</label>
-            <input type="text" placeholder="enter name"/>
+            <input type="text" placeholder="enter name" bind:value={name}/>
             <label for="">Choose Course</label>
             <input type="checkbox"/> Btech <br>
             <input type="checkbox"/> Bba <br>
@@ -25,6 +28,12 @@
             <input type="checkbox"/> D <br>
             <button>Submit</button>
         </form>
+    {/if}
+    {#if isShowData}
+    <alert>Submitted Successfully!!</alert>
+        <div class="data">
+            <h2>{name}</h2>
+        </div>
     {/if}
 </main>
 
@@ -64,6 +73,15 @@
         border-radius: 9px;
         padding: 10px;
         margin: 10px;
+        cursor: pointer;
+    }
+
+    data{
+        border: 1px solid blue;
+        width: 500px;
+        margin: 4% auto;
+        padding: 10px;
+        background-color: rgba(186, 198, 201, 0.5);
     }
 
 </style>
