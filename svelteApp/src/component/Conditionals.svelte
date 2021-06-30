@@ -1,4 +1,6 @@
 <script>
+import EventForwarding from "./EventForwarding.svelte";
+
     let array = [
         {name:"Divyanshi", age:20 , color:["black", 'red' , 'wheat']},
         {name:"janny", age:17 , color:["black" , 'blue']},
@@ -13,10 +15,15 @@
     ]
 
     let limit=0;
+    let showModal = false;
+	const toggleClick = () =>{
+		showModal = !showModal;
+	};
 
 </script>
-
+<EventForwarding isDisplay={showModal} on:click={toggleClick}/>
 <main>
+    <button on:click|once={toggleClick}>Click</button>
     <h1>Practice-6</h1>
     <h2>conditionls</h2>
     <h3>if-else</h3>

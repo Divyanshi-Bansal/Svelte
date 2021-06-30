@@ -9,6 +9,12 @@
 	import Props from './component/Props.svelte';
 	import EventForwarding from './component/EventForwarding.svelte';
 	// export let name;
+
+
+	let showModal = true;
+	const toggleClick = () =>{
+		showModal = !showModal;
+	};
 </script>
 
 <main>
@@ -19,9 +25,10 @@
 	<ReactiveValuesAndStatements/> -->
 	<!-- <Loops/> -->
 	<!-- <InlineDeleteEventHandler/> -->
-	<!-- <Conditionals/> -->
+	<Conditionals/>
 	<!-- <Props message1="props value for message1" message2="props value for message2" isPromo={true}/> -->
-	<EventForwarding/>
+	<!-- <EventForwarding isDisplay={showModal} on:click={toggleClick}/> -->
+	
 </main>
 
 <style>
