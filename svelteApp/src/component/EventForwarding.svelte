@@ -11,9 +11,11 @@
                 <h2>Event Forwarding</h2>
                 <h3>Description</h3>
                 <h3>Click anywhere to come out.</h3>
+                <slot></slot>
+                <slot name='another-slot'></slot>
             </div>
         </div>
-        <slot></slot>
+        
     {/if}
 </main>
 

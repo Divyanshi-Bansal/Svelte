@@ -29,7 +29,7 @@ import EventForwarding from "./EventForwarding.svelte";
     <h2>conditionls</h2>
     <h3>if-else</h3>
     <input type="text" bind:value={limit}>
-    <div class="details">
+    <div class="details" >
         {#each array as a}
             {#if a.age > limit}
                 <div class="info">
@@ -49,6 +49,7 @@ import EventForwarding from "./EventForwarding.svelte";
         {/each}
     </div>
 </main>
+<p slot='another-slot'>another slot</p>
 </EventForwarding>
 
 <style>
