@@ -23,16 +23,20 @@
     .modal{
         height: 100%;
         width: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        padding:20px;
+        background: rgba(0,0,0,0.5);
+        /* position: fixed; */
+        padding: 20px;
     }
     .alert{
         background-color: white;
         color: grey;
-        height: 200px;
+        /* height: 200px; */
         padding: 19px;
-        margin: 30px;
-        width: 400px;
+        margin: 10% auto;
+        /* width: 400px; */
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 </style>
 

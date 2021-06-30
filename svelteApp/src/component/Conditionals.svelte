@@ -65,8 +65,10 @@ import EventForwarding from "./EventForwarding.svelte";
     }
     .details{
         display: flex;
-        flex-direction: row;
-        margin:30px;
+        flex-direction: column;
+        /* margin:60px; */
+        justify-content: center;
+        align-items: center;
     }
     .info{
         color: lightblue;
