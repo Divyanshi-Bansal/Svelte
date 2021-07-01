@@ -1,6 +1,8 @@
 <script>
 import Alert from './Alert.svelte';
+import { createEventDispatcher} from 'svelte';
 
+    let dispatch = createEventDispatcher();
     let name;
     let age;
     let mobile;
@@ -9,7 +11,13 @@ import Alert from './Alert.svelte';
     let isDisplay = true;
     let isShowForm = true;
     const handleSubmit = (e) =>{
-        console.log(e)
+        const user = {
+            name,
+            age,
+            mobile,
+            address
+        };
+        dispatch('addUser' , user);
     }
 
     let count =0;
