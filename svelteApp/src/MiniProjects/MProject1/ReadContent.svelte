@@ -1,6 +1,6 @@
 <script>
 
-
+    import { Router, Link, Route } from "svelte-routing";
     
     import Alert from './Alert.svelte';
     import Form from './Form.svelte';
@@ -10,7 +10,7 @@
     }
 </script>
 
-
+<Router></Router>
 
 <main>
     
