@@ -1,8 +1,13 @@
 <script>
+import Alert from './Alert.svelte';
+
     let name;
     let age;
     let mobile;
     let address;
+    let message;
+    let isDisplay = true;
+    export let isShowForm = true;
     const handleSubmit = (e) =>{
         console.log(e)
     }
@@ -10,26 +15,30 @@
     let count =0;
     const checkDetails = () => {
         if (name === '' || age === '' || address === '' || mobile === '') {
-            
+            message = 'Kindly Fill all the values..'
         } else {
             
         }
     };
 </script>
 
+
 <main>
-    <form class="container" on:submit|preventDefault={handleSubmit}>
-        <div class="header">
-            <img src='' alt="logo">
-        </div>
-        <h2>CREATE YOUR ACCOUNT</h2>
-        <input type="text" placeholder="enter your name" bind:value={name}>
-        <input type="number" placeholder="your age" bind:value={age}>
-        <input type="number" placeholder="your mobile no." bind:value={mobile}>
-        <input type="text" placeholder="your address" bind:value={address}>
-        <button on:click={checkDetails}>SignUp</button>
-    </form>
+    {#if isShowForm}
+        <form class="container" on:submit|preventDefault={handleSubmit}>
+            <div class="header">
+                <img src='' alt="logo">
+            </div>
+            <h2>CREATE YOUR ACCOUNT</h2>
+            <input type="text" placeholder="enter your name" bind:value={name}>
+            <input type="number" placeholder="your age" bind:value={age}>
+            <input type="number" placeholder="your mobile no." bind:value={mobile}>
+            <input type="text" placeholder="your address" bind:value={address}>
+            <button on:click={checkDetails}>SignUp</button>
+        </form>
+    {/if}
 </main>
+
 
 <style>
     .container{
@@ -43,7 +52,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        
+        position: relative;
     }
     .header{
         border: 2px solid rgb(255, 192, 202);

@@ -10,6 +10,7 @@
 	import EventForwarding from './component/EventForwarding.svelte';
 	import Form from './component/Form.svelte';
 	import MainForm from './MiniProjects/MProject1/Form.svelte';
+	import ReadContent from './MiniProjects/MProject1/ReadContent.svelte';
 	// export let name;
 
 
@@ -31,7 +32,8 @@
 	<!-- <Props message1="props value for message1" message2="props value for message2" isPromo={true}/> -->
 	<!-- <EventForwarding isDisplay={showModal} on:click={toggleClick}/> -->
 	<!-- <Form/> -->
-	<MainForm/>
+	<!-- <MainForm/> -->
+	<ReadContent/>
 
 </main>
 

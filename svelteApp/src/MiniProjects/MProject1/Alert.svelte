@@ -1,35 +1,52 @@
 <script>
-    export let isDisplay = true;
+    import Form from './Form.svelte';
+    export let isDisplay = false;
     export let alertMessage = 'Kindly Register Yourself First :)';
+    let isShowForm = false;
     const toggleDisplay = () =>{
         isDisplay = !isDisplay;
+        isShowForm = true;
     }
 </script>
-
+<Form isShowForm={isShowForm}/>
 <main>
     {#if isDisplay}
+    <div class="main">
     <div class="alert">
+        <slot></slot>
         <h3>{alertMessage}</h3>
-        <button on:click={toggleDisplay}>Okay!!</button>
+        <button on:click={toggleDisplay}>Go tO siGn uP !!</button>
     </div>
+</div>
     {/if}
 </main>
 
 <style>
+    
     .alert{
-        border-color: white;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
+        
+        background: rgba(0, 0, 0,.8);
+        /* padding: 20px; */
+        /* margin: 10% auto; */
+        height:500px;
+        width: 600px;
+        position: fixed;
+        margin: 10% auto;
+        margin-top: 0;
+        margin-left: 500px;
+        margin-top: 5px;
+        /* position: absolute; */
     }
     h3{
-        color: black;
-        margin: 10%;
+        color: white;
+        margin: 10% auto;
     }
     button{
         padding: 10px;
-        margin: 20px;
-        color:grey;
-        background-color: black;
+        margin: 20px auto;
+        color:white;
+        background-color: grey;
+        width: 200px auto;
+        cursor: pointer;
     }
 </style>

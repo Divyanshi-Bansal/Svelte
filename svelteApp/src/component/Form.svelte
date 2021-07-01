@@ -114,7 +114,7 @@ import { get_store_value } from "svelte/internal";
         cursor: pointer;
     }
 
-    data{
+    .data{
         border: 1px solid blue;
         width: 500px;
         margin: 4% auto;
