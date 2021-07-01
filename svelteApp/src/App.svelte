@@ -11,6 +11,7 @@
 	import Form from './component/Form.svelte';
 	import MainForm from './MiniProjects/MProject1/Form.svelte';
 	import ReadContent from './MiniProjects/MProject1/ReadContent.svelte';
+	import {Router , Link , Route} from "svelte-routing";
 	// export let name;
 
 
@@ -33,7 +34,13 @@
 	<!-- <EventForwarding isDisplay={showModal} on:click={toggleClick}/> -->
 	<!-- <Form/> -->
 	<!-- <MainForm/> -->
-	<ReadContent/>
+	<!-- <ReadContent/> -->
+	<Router>
+		<div>
+			<Route exact path='/' component={ReadContent}>Home</Route>
+			<Route exact path='/Form' component={MainForm}>RegisterForm</Route>
+		</div>
+	</Router>
 
 </main>
 
