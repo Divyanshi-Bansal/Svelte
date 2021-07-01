@@ -9,6 +9,7 @@
 	import Props from './component/Props.svelte';
 	import EventForwarding from './component/EventForwarding.svelte';
 	import Form from './component/Form.svelte';
+	import MainForm from './MiniProjects/MProject1/Form.svelte';
 	// export let name;
 
 
@@ -29,7 +30,9 @@
 	<!-- <Conditionals/> -->
 	<!-- <Props message1="props value for message1" message2="props value for message2" isPromo={true}/> -->
 	<!-- <EventForwarding isDisplay={showModal} on:click={toggleClick}/> -->
-	<Form/>
+	<!-- <Form/> -->
+	<MainForm/>
+
 </main>
 
 <style>
