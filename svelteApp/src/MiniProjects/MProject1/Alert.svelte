@@ -1,14 +1,16 @@
 <script>
     import Form from './Form.svelte';
+    import { Router, Link, Route , navigate} from "svelte-routing";
     export let isDisplay = false;
     export let alertMessage = 'Kindly Register Yourself First :)';
     let isShowForm = false;
     const toggleDisplay = () =>{
         isDisplay = !isDisplay;
-        isShowForm = true;
+        navigate("/Form", { replace: true });
+        // isShowForm = true;
     }
 </script>
-<Form isShowForm={isShowForm}/>
+<!-- <Form isShowForm={isShowForm}/> -->
 <main>
     {#if isDisplay}
     <div class="main">

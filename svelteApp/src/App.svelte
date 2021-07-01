@@ -12,6 +12,7 @@
 	import MainForm from './MiniProjects/MProject1/Form.svelte';
 	import ReadContent from './MiniProjects/MProject1/ReadContent.svelte';
 	import {Router , Link , Route} from "svelte-routing";
+	import Alert from './MiniProjects/MProject1/Alert.svelte';
 	// export let name;
 
 
@@ -38,6 +39,7 @@
 	<Router>
 		<div>
 			<Route exact path='/' component={ReadContent}>Home</Route>
+			<Route exact path='/Alert' component={Alert}>Home</Route>
 			<Route exact path='/Form' component={MainForm}>RegisterForm</Route>
 		</div>
 	</Router>

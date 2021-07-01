@@ -7,7 +7,7 @@ import Alert from './Alert.svelte';
     let address;
     let message;
     let isDisplay = true;
-    export let isShowForm = true;
+    let isShowForm = true;
     const handleSubmit = (e) =>{
         console.log(e)
     }

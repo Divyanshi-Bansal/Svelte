@@ -1,6 +1,6 @@
 <script>
 
-    import { Router, Link, Route } from "svelte-routing";
+    import { Router, Link, Route , navigate} from "svelte-routing";
     
     import Alert from './Alert.svelte';
     import Form from './Form.svelte';
@@ -10,12 +10,12 @@
     }
 </script>
 
-<Router>
-    <nav>
-        <Link to='/'>Home</Link>
-        <Link to='/Form'>RegisterForm</Link>
-    </nav>
-</Router>
+<!-- <Router>
+    <div>
+        <Link to="/Form"></Link>
+        <Link to='/Alert'></Link>
+    </div>
+</Router> -->
 
 <main>
     
