@@ -6,6 +6,15 @@
     const handleSubmit = (e) =>{
         console.log(e)
     }
+
+    let count =0;
+    const checkDetails = () => {
+        if (name === '' || age === '' || address === '' || mobile === '') {
+            
+        } else {
+            
+        }
+    };
 </script>
 
 <main>
@@ -18,7 +27,7 @@
         <input type="number" placeholder="your age" bind:value={age}>
         <input type="number" placeholder="your mobile no." bind:value={mobile}>
         <input type="text" placeholder="your address" bind:value={address}>
-        <button>SignUp</button>
+        <button on:click={checkDetails}>SignUp</button>
     </form>
 </main>
 
