@@ -10,7 +10,12 @@
     }
 </script>
 
-<Router></Router>
+<Router>
+    <nav>
+        <Link to='/'>Home</Link>
+        <Link to='/Form'>RegisterForm</Link>
+    </nav>
+</Router>
 
 <main>
     
