@@ -13,6 +13,7 @@
 	import ReadContent from './MiniProjects/MProject1/ReadContent.svelte';
 	import {Router , Link , Route} from "svelte-routing";
 	import Alert from './MiniProjects/MProject1/Alert.svelte';
+import UsersData from './MiniProjects/MProject1/UsersData.svelte';
 	// export let name;
 
 
@@ -34,15 +35,16 @@
 	<!-- <Props message1="props value for message1" message2="props value for message2" isPromo={true}/> -->
 	<!-- <EventForwarding isDisplay={showModal} on:click={toggleClick}/> -->
 	<!-- <Form/> -->
-	<!-- <MainForm/> -->
+	<MainForm/>
 	<!-- <ReadContent/> -->
-	<Router>
+	<!-- <Router>
 		<div>
-			<Route exact path='/' component={ReadContent}>Home</Route>
-			<Route exact path='/Alert' component={Alert}>Home</Route>
-			<Route exact path='/Form' component={MainForm}>RegisterForm</Route>
+			<Route  path='/' component={ReadContent}>Home</Route>
+			<Route  path='/Alert' component={Alert}>Home</Route>
+			<Route  path='/Form' component={MainForm}>RegisterForm</Route>
+			<Route path='/UsersData' component={UsersData}>Customers</Route>
 		</div>
-	</Router>
+	</Router> -->
 
 </main>
 

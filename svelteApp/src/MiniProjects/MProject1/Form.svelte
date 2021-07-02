@@ -1,6 +1,8 @@
 <script>
 import Alert from './Alert.svelte';
 import { createEventDispatcher} from 'svelte';
+import { navigate } from 'svelte-routing';
+import UsersData from './UsersData.svelte';
 
     let dispatch = createEventDispatcher();
     let name;
@@ -26,17 +28,20 @@ import { createEventDispatcher} from 'svelte';
             message = 'Kindly Fill all the values..'
         } else {
             
-        }
+        };
+        navigate("/UsersData", { replace: true } ,addUser);
+        
     };
 </script>
 
 
 <main>
     {#if isShowForm}
+    <div class="left-img"><img src='' alt="logo"></div>
         <form class="container" on:submit|preventDefault={handleSubmit}>
-            <div class="header">
+            <!-- <div class="header">
                 <img src='' alt="logo">
-            </div>
+            </div> -->
             <h2>CREATE YOUR ACCOUNT</h2>
             <input type="text" placeholder="enter your name" bind:value={name}>
             <input type="number" placeholder="your age" bind:value={age}>
@@ -49,8 +54,25 @@ import { createEventDispatcher} from 'svelte';
 
 
 <style>
+    main{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        background: linear-gradient(180deg, #e5a68b, #feada6 ,#f5efef);
+        margin: 0;
+        padding: 0;
+        top: -10px;
+        left:0;
+        position: fixed;
+        width: 100%;
+        height:100%;
+    }
+    .left-img{
+        margin: 30px;
+        border: 1px solid black;
+    }
     .container{
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
         width: 550px;
         margin: 10% auto;
         /* padding: 20px; */
@@ -61,6 +83,8 @@ import { createEventDispatcher} from 'svelte';
         align-items: center;
         text-align: center;
         position: relative;
+        box-shadow: 2px 3px 2px 3px #f5efef;
+        border-radius: 13px;
     }
     .header{
         border: 2px solid rgb(255, 192, 202);
@@ -107,4 +131,5 @@ import { createEventDispatcher} from 'svelte';
         font-weight: bold;
         font-size: 20px;
     }
+    
 </style>
