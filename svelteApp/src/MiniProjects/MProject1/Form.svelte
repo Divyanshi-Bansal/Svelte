@@ -3,6 +3,7 @@ import Alert from './Alert.svelte';
 import { createEventDispatcher} from 'svelte';
 import { Link, navigate } from 'svelte-routing';
 import UsersData from './UsersData.svelte';
+import UserDataJS from '../stores/UsersData';
 
     let dispatch = createEventDispatcher();
     let name;
