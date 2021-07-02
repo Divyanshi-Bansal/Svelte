@@ -42,7 +42,7 @@ import Header from "./Header.svelte";
 
 <style>
     main{
-        border: 1px solid black;
+        /* border: 1px solid black; */
         margin-top: 7%;
     }
     table{

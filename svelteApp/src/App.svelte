@@ -37,15 +37,15 @@
 	<!-- <Form/> -->
 	<!-- <MainForm/> -->
 	<!-- <ReadContent/> -->
-	<!-- <Router>
+	<Router>
 		<div>
 			<Route  path='/' component={ReadContent}>Home</Route>
 			<Route  path='/Alert' component={Alert}>Home</Route>
 			<Route  path='/Form' component={MainForm}>RegisterForm</Route>
 			<Route path='/UsersData' component={UsersData}>Customers</Route>
 		</div>
-	</Router> -->
-	<UsersData/>
+	</Router>
+	<!-- <UsersData/> -->
 
 </main>
 
