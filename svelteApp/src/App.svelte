@@ -13,14 +13,14 @@
 	import ReadContent from './MiniProjects/MProject1/ReadContent.svelte';
 	import {Router , Link , Route} from "svelte-routing";
 	import Alert from './MiniProjects/MProject1/Alert.svelte';
-import UsersData from './MiniProjects/MProject1/UsersData.svelte';
-	// export let name;
+	import UsersData from './MiniProjects/MProject1/UsersData.svelte';
+	
 
 
-	let showModal = true;
-	const toggleClick = () =>{
-		showModal = !showModal;
-	};
+	// let showModal = true;
+	// const toggleClick = () =>{
+	// 	showModal = !showModal;
+	// };
 </script>
 
 <main>

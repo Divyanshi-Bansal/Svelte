@@ -24,19 +24,12 @@ import UsersData from './UsersData.svelte';
     }
 
     let count =0;
-    const checkDetails = () => {
-        if (name === '' || age === '' || address === '' || mobile === '') {
-            message = 'Kindly Fill all the values..'
-        } else {
-            
-        };
-        // navigate("/UsersData", { replace: true });
-        
-        
+    const handleSignup = () => {
+        navigate("/UsersData", { replace: true });
     };
 
 
-    // const addUser = (e) => {console.log(e.details);};
+    const addUser = (e) => {console.log(e.details);};
 </script>
 
 
@@ -53,12 +46,12 @@ import UsersData from './UsersData.svelte';
             <input type="number" placeholder="your age" bind:value={age}>
             <input type="number" placeholder="your mobile no." bind:value={mobile}>
             <input type="text" placeholder="your address" bind:value={address}>
-            <button on:click={checkDetails}>SignUp</button>
+            <button on:click={handleSignup}>SignUp</button>
         </form>
-        <Link to='/UserData'></Link>
     {/if}
+    
 </main>
-
+<UsersData list={addUser}/>
 
 <style>
     main{
