@@ -1,13 +1,11 @@
 <script>
 import Header from "./Header.svelte";
+import addUsersData from '../stores/addUsersData';
 
     export const addUser = (e) => {
         console.log("welcome");
     }
-    let list=[
-        {name:"Divyanshi Bansal" , age:20 , mobile:8989898989 , address:"Aligarh,up"},
-    ];
-
+    
     
 </script>
 <!-- svelte-ignore missing-declaration -->
@@ -26,7 +24,7 @@ import Header from "./Header.svelte";
                 <th>FeedBack</th>
             </tr>
 
-            {#each list as user1}
+            {#each $addUsersData as user1}
                     <td>{user1.name}</td>
                     <td>{user1.age}</td>
                     <td>{user1.mobile}</td>
