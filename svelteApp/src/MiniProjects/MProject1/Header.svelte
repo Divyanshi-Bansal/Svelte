@@ -1,9 +1,15 @@
 <script>
     import Form from './Form.svelte';
+    import { Router, Link, Route , navigate} from "svelte-routing";
     let src='assests/morr-logo.jpg';
     const Login = (e) =>{
         e.preventDefault();
         navigate("/Form", { replace: true });
+    }
+
+    const Customers = (e) =>{
+        e.preventDefault();
+        navigate('/UsersData' , {replace:true});
     }
 
 </script>
@@ -12,7 +18,7 @@
     <div class="header">
         <img src={src} alt="logo" class="logo"/>
         <!-- svelte-ignore a11y-invalid-attribute -->
-        <a href="">Customers</a>
+        <a href="" on:click={Customers}>Customers</a>
         <!-- svelte-ignore a11y-invalid-attribute -->
         <a href="">Contact</a>
         <!-- svelte-ignore a11y-invalid-attribute -->
