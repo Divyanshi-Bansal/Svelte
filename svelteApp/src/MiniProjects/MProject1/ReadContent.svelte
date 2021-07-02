@@ -13,6 +13,8 @@
         e.preventDefault();
         navigate("/Form", { replace: true });
     }
+
+    let src = 'assests/morr-logo.jpg';
 </script>
 
 <!-- <Router>
@@ -33,7 +35,7 @@
         
         <div class="second">
             <div class="header">
-                <img src="" alt="logo"/>
+                <img src={src} alt="logo" class="logo"/>
                 <!-- svelte-ignore a11y-invalid-attribute -->
                 <a href="">Customers</a>
                 <!-- svelte-ignore a11y-invalid-attribute -->
@@ -78,14 +80,16 @@
         top: 0;
         right: 0;
         bottom: auto;
-        padding: 20px;
-        padding-bottom: 20px;
+        padding: 15px;
+        padding-bottom: 15px;
         background-color: #e5a68b;
     }
 
-    img{
+    .logo{
         /* border: 1px solid black; */
         float: left;
+        padding: 0;
+        height: 90px;
     }
     .image{
         float: right;

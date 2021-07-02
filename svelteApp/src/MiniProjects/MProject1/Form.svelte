@@ -1,7 +1,7 @@
 <script>
 import Alert from './Alert.svelte';
 import { createEventDispatcher} from 'svelte';
-import { navigate } from 'svelte-routing';
+import { Link, navigate } from 'svelte-routing';
 import UsersData from './UsersData.svelte';
 
     let dispatch = createEventDispatcher();
@@ -12,6 +12,7 @@ import UsersData from './UsersData.svelte';
     let message;
     let isDisplay = true;
     let isShowForm = true;
+    let src='assests/morr-logo.jpg';
     const handleSubmit = (e) =>{
         const user = {
             name,
@@ -29,19 +30,24 @@ import UsersData from './UsersData.svelte';
         } else {
             
         };
-        navigate("/UsersData", { replace: true } ,addUser);
+        // navigate("/UsersData", { replace: true });
+        
         
     };
+
+
+    // const addUser = (e) => {console.log(e.details);};
 </script>
 
 
 <main>
     {#if isShowForm}
-    <div class="left-img"><img src='' alt="logo"></div>
+    <!-- <div class="left-img"><img src={src} alt="logo"></div> -->
         <form class="container" on:submit|preventDefault={handleSubmit}>
-            <!-- <div class="header">
-                <img src='' alt="logo">
-            </div> -->
+            <div class="header">
+                <img src={src} alt="logo">
+            </div>
+            
             <h2>CREATE YOUR ACCOUNT</h2>
             <input type="text" placeholder="enter your name" bind:value={name}>
             <input type="number" placeholder="your age" bind:value={age}>
@@ -49,6 +55,7 @@ import UsersData from './UsersData.svelte';
             <input type="text" placeholder="your address" bind:value={address}>
             <button on:click={checkDetails}>SignUp</button>
         </form>
+        <Link to='/UserData'></Link>
     {/if}
 </main>
 
@@ -58,7 +65,7 @@ import UsersData from './UsersData.svelte';
         display:flex;
         flex-direction: row;
         align-items: center;
-        background: linear-gradient(180deg, #e5a68b, #feada6 ,#f5efef);
+        background: linear-gradient(180deg, #e5a68b,  #f5efef);
         margin: 0;
         padding: 0;
         top: -10px;
@@ -67,10 +74,10 @@ import UsersData from './UsersData.svelte';
         width: 100%;
         height:100%;
     }
-    .left-img{
+    /* .left-img{
         margin: 30px;
         border: 1px solid black;
-    }
+    } */
     .container{
         /* border: 1px solid blue; */
         width: 550px;
@@ -87,10 +94,12 @@ import UsersData from './UsersData.svelte';
         border-radius: 13px;
     }
     .header{
-        border: 2px solid rgb(255, 192, 202);
-        padding: 10px;
+        /* border: 2px solid rgb(255, 192, 202); */
+        /* padding: 10px; */
         margin-bottom: 13px;
-        width:530px ;
+        width:550px ;
+        border-radius: 13px;
+        background-color: #e5a68b;
     }
     h2{
         color: rgb(255, 123, 145);
