@@ -1,4 +1,5 @@
 <script>
+    import Form from './Form.svelte';
     let src='assests/morr-logo.jpg';
     const Login = (e) =>{
         e.preventDefault();
@@ -26,8 +27,8 @@
         top: 0;
         right: 0;
         bottom: auto;
-        padding: 15px;
-        padding-bottom: 15px;
+        /* padding: 15px; */
+        /* padding-bottom: 15px; */
         background-color: #e5a68b;
     }
 
@@ -35,13 +36,13 @@
         /* border: 1px solid black; */
         float: left;
         padding: 0;
-        height: 90px;
+        height: 110px;
     }
     
     a{
         float: right;
-        padding: 10px;
-        margin-right: 10px;
+        padding: 30px;
+        margin-right: 17px;
         color: white;
     }
 </style>

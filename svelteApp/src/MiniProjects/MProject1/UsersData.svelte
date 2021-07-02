@@ -14,23 +14,62 @@ import Header from "./Header.svelte";
 
 <main>
     <Header/>
-    {#each list as user1}
-        <div class="box">
-            <h2>{user1.name}</h2>
-            <h3>{user1.age}</h3>
-            <h2>{user1.mobile}</h2>
-            <h3>{user1.address}</h3>
-        </div>
-    {/each}
+
+    <table>
+        <thead><h2>OuR HaPpy CUstomErs!</h2></thead>
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Contact</th>
+                <th>Residence</th>
+                <th>FeedBack</th>
+            </tr>
+
+            {#each list as user1}
+                    <td>{user1.name}</td>
+                    <td>{user1.age}</td>
+                    <td>{user1.mobile}</td>
+                    <td>{user1.address}</td>
+                    <td>Coming...</td>
+            {/each}
+
+
+
+        </tbody>
+    </table>
 </main>
 
 <style>
-    .box{
-        border: 1px solid burlywood;
-        border-radius: 15px;
-        padding: 10px;
-        width:300px;
-        justify-content: center;
-        background-color:rgb(255, 241, 235);
+    main{
+        border: 1px solid black;
+        margin-top: 7%;
     }
+    table{
+    border-collapse: collapse;
+    align-items: center;
+    margin: 10px auto;
+    justify-content: space-evenly;
+}
+
+thead{
+    color: #e5a68b;
+    font-size: 26px;
+   
+    margin: 5% auto;
+}
+thead h2{
+    text-align: center;
+    align-items: center;
+    margin: 5% auto;
+}
+td,th{
+    border-bottom: 1px solid grey;
+    font-size: 23px;
+    padding: 20px;
+}
+th{
+    background-color: #e5a68b;
+    color: white;
+}
 </style>
