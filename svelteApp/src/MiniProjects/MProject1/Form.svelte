@@ -27,9 +27,13 @@ import UsersData from './UsersData.svelte';
     const handleSignup = () => {
         navigate("/UsersData", { replace: true });
     };
+let list =[];
 
-
-    const addUser = (e) => {console.log(e.details);};
+    const addUser = (e) => {
+        // console.log(e.details);
+        const user1 = e.detail;
+        list = [user1 , ...list]
+    };
 </script>
 
 
@@ -51,7 +55,7 @@ import UsersData from './UsersData.svelte';
     {/if}
     
 </main>
-<UsersData list={addUser}/>
+<!-- <UsersData list={addUser}/> -->
 
 <style>
     main{

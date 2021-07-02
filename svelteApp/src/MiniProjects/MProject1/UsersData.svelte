@@ -1,15 +1,20 @@
 <script>
+import Header from "./Header.svelte";
+
     export const addUser = (e) => {
         console.log("welcome");
     }
-    let users=[
-        {name:"Divyanshi Bansal" , age:20 , mobile:8989087723 , address:"Aligarh,up"},
+    let list=[
+        {name:"Divyanshi Bansal" , age:20 , mobile:8989898989 , address:"Aligarh,up"},
     ];
+
+    
 </script>
 <!-- svelte-ignore missing-declaration -->
 
 <main>
-    {#each users as user1}
+    <Header/>
+    {#each list as user1}
         <div class="box">
             <h2>{user1.name}</h2>
             <h3>{user1.age}</h3>
@@ -20,5 +25,12 @@
 </main>
 
 <style>
-
+    .box{
+        border: 1px solid burlywood;
+        border-radius: 15px;
+        padding: 10px;
+        width:300px;
+        justify-content: center;
+        background-color:rgb(255, 241, 235);
+    }
 </style>
