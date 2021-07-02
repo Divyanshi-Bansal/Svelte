@@ -10,8 +10,7 @@ import addUsersData from '../stores/addUsersData';
     let age;
     let mobile;
     let address;
-    let message;
-    let isDisplay = true;
+    
     let isShowForm = true;
     let src='assests/morr-logo.jpg';
     const handleSubmit = (e) =>{
@@ -21,20 +20,13 @@ import addUsersData from '../stores/addUsersData';
             mobile,
             address
         };
-        dispatch('addUser' , user);
+        addUsersData.update(currentdata => {
+            return [user , ...currentdata];
+        });
+        navigate("/UsersData", { replace: true });
     }
 
-    let count =0;
-    const handleSignup = () => {
-        navigate("/UsersData", { replace: true });
-    };
-let list =[];
-
-    const addUser = (e) => {
-        // console.log(e.details);
-        const user1 = e.detail;
-        list = [user1 , ...list]
-    };
+    
 </script>
 
 
@@ -51,12 +43,12 @@ let list =[];
             <input type="number" placeholder="your age" bind:value={age}>
             <input type="number" placeholder="your mobile no." bind:value={mobile}>
             <input type="text" placeholder="your address" bind:value={address}>
-            <button on:click={handleSignup}>SignUp</button>
+            <button >SignUp</button>
         </form>
     {/if}
     
 </main>
-<!-- <UsersData list={addUser}/> -->
+
 
 <style>
     main{
@@ -72,10 +64,7 @@ let list =[];
         width: 100%;
         height:100%;
     }
-    /* .left-img{
-        margin: 30px;
-        border: 1px solid black;
-    } */
+    
     .container{
         /* border: 1px solid blue; */
         width: 550px;

@@ -1,6 +1,4 @@
 <script>
-
-    import { Router, Link, Route , navigate} from "svelte-routing";
     
     import Alert from './Alert.svelte';
     import Form from './Form.svelte';
@@ -10,13 +8,6 @@ import Header from "./Header.svelte";
         ReadMore = true;
     }
 </script>
-
-<!-- <Router>
-    <div>
-        <Link to="/Form"></Link>
-        <Link to='/Alert'></Link>
-    </div>
-</Router> -->
 
 <main>
     

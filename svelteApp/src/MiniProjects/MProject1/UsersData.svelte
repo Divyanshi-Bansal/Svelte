@@ -2,10 +2,7 @@
 import Header from "./Header.svelte";
 import addUsersData from '../stores/addUsersData';
 
-    export const addUser = (e) => {
-        console.log("welcome");
-    }
-    
+   
     
 </script>
 <!-- svelte-ignore missing-declaration -->
@@ -24,14 +21,17 @@ import addUsersData from '../stores/addUsersData';
                 <th>FeedBack</th>
             </tr>
 
+            
             {#each $addUsersData as user1}
+            <tr>
                     <td>{user1.name}</td>
                     <td>{user1.age}</td>
                     <td>{user1.mobile}</td>
                     <td>{user1.address}</td>
                     <td>Coming...</td>
+                </tr>
             {/each}
-
+       
 
 
         </tbody>
