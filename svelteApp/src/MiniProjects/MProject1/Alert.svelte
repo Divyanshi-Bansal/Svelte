@@ -26,9 +26,8 @@
     
     .alert{
         
-        background: rgba(0, 0, 0,.8);
-        /* padding: 20px; */
-        /* margin: 10% auto; */
+        background: rgba(0, 0, 0,.3);
+        border-radius: 10px;
         height:500px;
         width: 600px;
         position: fixed;
@@ -36,7 +35,6 @@
         margin-top: 0;
         margin-left: 500px;
         margin-top: 5px;
-        /* position: absolute; */
     }
     h3{
         color: white;

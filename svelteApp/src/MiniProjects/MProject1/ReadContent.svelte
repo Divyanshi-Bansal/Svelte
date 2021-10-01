@@ -14,7 +14,7 @@ import Header from "./Header.svelte";
     <div class="container">
         <Alert alertMessage='Kindly Register Yourself First' isDisplay={ReadMore}>
             <h3 style="color: white;">Welcome to Morr :))</h3>
-            <h4 style="color: white;">For further Detais, <br> you can register yourself</h4>
+            <h4 style="color: white;">For further Details, <br> you can register yourself</h4>
             <h4 style="color: white;">It's Safe and Secure!!</h4>
         </Alert>
         
